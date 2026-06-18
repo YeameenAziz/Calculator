@@ -1,0 +1,44 @@
+<!-- AI prompt Generator -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Generator</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <div class="main">
+    <div class="container mx-auto px-4 py-8">  <h1 class="text-2xl font-semibold text-gray-800 mb-4 text-center" style="color: #f3a8c5;">
+      OpenAI Prompt Generator
+    </h1>
+    <p class="mx-auto max-w-2xl" style="color: #f0f0f0;">
+      Welcome to the OpenAI Prompt Generator! This tool helps you create prompts for OpenAI models to generate content based on your specifications. Whether you're looking for creative writing, coding assistance, or any other type of content, this generator can help you craft the perfect prompt.
+    </p>
+
+    <div class="mt-4 backdrop-sepia-50 shadow-md rounded-lg p-6 ">
+     <label for="Your writing" class="block text-sm font-medium text-base-700" style="color: #f0f0f0;">Your writing</label>
+     <div class="mt-1">
+       <textarea id="Your writing" name="Your writing" rows="10" cols="40" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border-2 border-solid " placeholder="Enter your writing here..." style="color: #f0f0f0;"></textarea>
+      </div>
+       <div class="mt-4">
+         <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 cursor-pointer"> Generate Prompt
+         </button>
+      <div class="mr-4">
+        <label for = "Prompt Generated Text" class="pt-6 block text-xs font-medium text-gray-500" style="color: #f0f0f0;">Generated Prompt</label>
+        <div class="mt-3">
+          <textarea id="Prompt Generated Text" name="Prompt Generated Text" rows="15" cols="40" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border-2 border-solid " style="color: #ffffff;" placeholder="Generated prompt will appear here..." readonly></textarea>
+        </div>
+         <button type="button" class="inline-flex items-center px-6 py-3 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 cursor-pointer mt-6" onclick="copyPrompt()">
+           Copy Prompt
+         </button>
+      </div>
+     </div>
+   </div>
+  </div>
+ </div>
+ 
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="styling.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="calculator bg-[rgb(109,80,86)] p-6 rounded-lg shadow-lg w-80">
+        <h1 class=" px-2 py-2 font-(family-name:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif)">C A S I O</h1>
+        <input class="bg-[#f0f0f0] text-base p-2 rounded-sm border border-gray-300" type="text" id="display" readonly>
+        <div class="py-4 buttons grid grid-cols-4 gap-x-2 gap-y-4 mt-4">
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="clearDisplay()">C</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="Delete()">DEL</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="handlePercent()">%</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('/')">/</button>  
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('7')">7</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('8')" >8</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('9')">9</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('*')">*</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('4')">4</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('5')">5</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('6')">6</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('-')">-</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('1')">1</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('2')">2</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('3')">3</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('+')">+</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('0')">0</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('.')">.</button>
+            <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('Math.sqrt(')">√</button>
+             <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay('(')">(</button>
+              <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="appendDisplay(')')">)</button>
+            <!-- <button class="equal-btn" onclick="result()">=</button> -->
+             <button class = "bg-[#9e9789] text-base px-8 py-2 rounded-sm cursor-pointer ease-linear hover:bg-[rgb(121,121,165)]" onclick="result()">=</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
